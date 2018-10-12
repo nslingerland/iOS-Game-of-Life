@@ -22,7 +22,18 @@
 		0A5FF40A162C11FC001A7E00 /* LSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5FF409162C11FC001A7E00 /* LSimulation.m */; };
 		0A7DFEB9162C68E10038F3BD /* bacteria-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7DFEB8162C68E10038F3BD /* bacteria-icon.png */; };
 		0A7DFEBC162C69100038F3BD /* bacteria-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7DFEBB162C69100038F3BD /* bacteria-icon2.png */; };
+		F9080EC1216E94A100D8440A /* lifeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9080EC0216E94A100D8440A /* lifeUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9080EC3216E94A100D8440A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A4C240116281ADC007DA868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A4C240916281ADC007DA868;
+			remoteInfo = life;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A4C240A16281ADC007DA868 /* life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = life.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +58,13 @@
 		0A5FF409162C11FC001A7E00 /* LSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSimulation.m; sourceTree = "<group>"; };
 		0A7DFEB8162C68E10038F3BD /* bacteria-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bacteria-icon.png"; sourceTree = "<group>"; };
 		0A7DFEBB162C69100038F3BD /* bacteria-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bacteria-icon2.png"; sourceTree = "<group>"; };
+		F9080EBE216E94A100D8440A /* lifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9080EC0216E94A100D8440A /* lifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeUITests.m; sourceTree = "<group>"; };
+		F9080EC2216E94A100D8440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99A91E9216FE99500A661B4 /* Hack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hack.h; sourceTree = "<group>"; };
+		F9BD127D217139CB00E18794 /* XCUIApplicationImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUIApplicationImpl.h; sourceTree = "<group>"; };
+		F9FB8419216FF97D005C9C39 /* XCUIApplication+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCUIApplication+Private.h"; sourceTree = "<group>"; };
+		F9FB84242170032C005C9C39 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +79,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9080EBB216E94A100D8440A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0A4C23FF16281ADC007DA868 = {
 			isa = PBXGroup;
 			children = (
+				F9FB84242170032C005C9C39 /* DerivedData */,
 				0A4C241416281ADC007DA868 /* life */,
+				F9080EBF216E94A100D8440A /* lifeUITests */,
 				0A4C240D16281ADC007DA868 /* Frameworks */,
 				0A4C240B16281ADC007DA868 /* Products */,
 			);
@@ -77,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4C240A16281ADC007DA868 /* life.app */,
+				F9080EBE216E94A100D8440A /* lifeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +161,18 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		F9080EBF216E94A100D8440A /* lifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9080EC0216E94A100D8440A /* lifeUITests.m */,
+				F9080EC2216E94A100D8440A /* Info.plist */,
+				F99A91E9216FE99500A661B4 /* Hack.h */,
+				F9FB8419216FF97D005C9C39 /* XCUIApplication+Private.h */,
+				F9BD127D217139CB00E18794 /* XCUIApplicationImpl.h */,
+			);
+			path = lifeUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +193,24 @@
 			productReference = 0A4C240A16281ADC007DA868 /* life.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F9080EBD216E94A100D8440A /* lifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9080EC5216E94A100D8440A /* Build configuration list for PBXNativeTarget "lifeUITests" */;
+			buildPhases = (
+				F9080EBA216E94A100D8440A /* Sources */,
+				F9080EBB216E94A100D8440A /* Frameworks */,
+				F9080EBC216E94A100D8440A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9080EC4216E94A100D8440A /* PBXTargetDependency */,
+			);
+			name = lifeUITests;
+			productName = lifeUITests;
+			productReference = F9080EBE216E94A100D8440A /* lifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +220,18 @@
 				CLASSPREFIX = L;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Kemal Enver";
+				TargetAttributes = {
+					0A4C240916281ADC007DA868 = {
+						DevelopmentTeam = V9WTTPBFK9;
+						ProvisioningStyle = Automatic;
+					};
+					F9080EBD216E94A100D8440A = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = V9WTTPBFK9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0A4C240916281ADC007DA868;
+					};
+				};
 			};
 			buildConfigurationList = 0A4C240416281ADC007DA868 /* Build configuration list for PBXProject "life" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -176,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				0A4C240916281ADC007DA868 /* life */,
+				F9080EBD216E94A100D8440A /* lifeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +265,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9080EBC216E94A100D8440A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,7 +287,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9080EBA216E94A100D8440A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9080EC1216E94A100D8440A /* lifeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9080EC4216E94A100D8440A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A4C240916281ADC007DA868 /* life */;
+			targetProxy = F9080EC3216E94A100D8440A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A4C241716281ADC007DA868 /* InfoPlist.strings */ = {
@@ -277,10 +371,14 @@
 		0A4C243216281ADC007DA868 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "life/life-Prefix.pch";
 				INFOPLIST_FILE = "life/life-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -288,11 +386,125 @@
 		0A4C243316281ADC007DA868 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "life/life-Prefix.pch";
 				INFOPLIST_FILE = "life/life-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F9080EC6216E94A100D8440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = lifeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.lifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = life;
+			};
+			name = Debug;
+		};
+		F9080EC7216E94A100D8440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = V9WTTPBFK9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = lifeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.lifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = life;
 			};
 			name = Release;
 		};
@@ -313,6 +525,15 @@
 			buildConfigurations = (
 				0A4C243216281ADC007DA868 /* Debug */,
 				0A4C243316281ADC007DA868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9080EC5216E94A100D8440A /* Build configuration list for PBXNativeTarget "lifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9080EC6216E94A100D8440A /* Debug */,
+				F9080EC7216E94A100D8440A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
