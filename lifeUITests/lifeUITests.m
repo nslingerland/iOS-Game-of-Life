@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 
-#import "Hack.h"
 #import "XCUIApplication+Private.h"
 
 #define BUNDLE_ID @"com.kemalenver.life"

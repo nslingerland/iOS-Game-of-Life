@@ -61,10 +61,7 @@
 		F9080EBE216E94A100D8440A /* lifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9080EC0216E94A100D8440A /* lifeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lifeUITests.m; sourceTree = "<group>"; };
 		F9080EC2216E94A100D8440A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F99A91E9216FE99500A661B4 /* Hack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hack.h; sourceTree = "<group>"; };
-		F9BD127D217139CB00E18794 /* XCUIApplicationImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUIApplicationImpl.h; sourceTree = "<group>"; };
 		F9FB8419216FF97D005C9C39 /* XCUIApplication+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCUIApplication+Private.h"; sourceTree = "<group>"; };
-		F9FB84242170032C005C9C39 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +89,6 @@
 		0A4C23FF16281ADC007DA868 = {
 			isa = PBXGroup;
 			children = (
-				F9FB84242170032C005C9C39 /* DerivedData */,
 				0A4C241416281ADC007DA868 /* life */,
 				F9080EBF216E94A100D8440A /* lifeUITests */,
 				0A4C240D16281ADC007DA868 /* Frameworks */,
@@ -166,9 +162,7 @@
 			children = (
 				F9080EC0216E94A100D8440A /* lifeUITests.m */,
 				F9080EC2216E94A100D8440A /* Info.plist */,
-				F99A91E9216FE99500A661B4 /* Hack.h */,
 				F9FB8419216FF97D005C9C39 /* XCUIApplication+Private.h */,
-				F9BD127D217139CB00E18794 /* XCUIApplicationImpl.h */,
 			);
 			path = lifeUITests;
 			sourceTree = "<group>";
